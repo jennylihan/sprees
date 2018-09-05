@@ -11,50 +11,105 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<style type="text/css">
 
-	body, html {
-	    height: 100%;
-	}
-	/*Source: https://www.w3schools.com/howto/howto_css_full_page.asp*/
-	.initial { 
-	    /* The image used */
-	    background-image: url("https://scontent.fsan1-2.fna.fbcdn.net/v/t1.0-9/28379501_815305485325067_7659236886254819282_n.jpg?_nc_cat=0&oh=b3aa2ea38d62305ac8f01e017b67b892&oe=5C3BC9FF");
+	<head> 
+	<style type="text/css">
 
-	    /* Full height */
-	    height: 90%; 
 
-	    /* Center and scale the image nicely */
-	    background-position: center;
-	    background-repeat: no-repeat;
-	    background-size: cover;
-	}
+		body, html {
+		    height: 100%;
+		}
+		#front-img{
+			height:100%
+			width:100%;
+		}
 
-	#container a, h1{
-		position: absolute;
-		top: 60%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		-ms-transform: translate(-50%, -50%);
+		#front-img a, #front-img h1{
+			position: absolute;
+			top: 60%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+		}
+		#front-img a{
+			height: 5%;
+			width: auto;
+		}
 		
-	}
-	#container a{
-		height: 5%;
-		width: auto;
-	}
-
-</style>
+	</style>
 </head>
+
 <body>
 	
-	<div id="container" style="height: 100%; max-width: 100%;">
-		<div class="initial"></div>
-		<h1 style="top:45%; color: white; font: New Century Schoolbook, TeX Gyre Schola, serif; font-size: 3vw;">
+	
+	<div id="front-img" style="">
+		<img src="https://si.wsj.net/public/resources/images/BN-WJ793_STANFO_GR_20171130163436.jpg" style="height:90vh; width: 100%;padding:0px;">
+		
+		<h1 style="top:45%; color: white; font: New Century Schoolbook, TeX Gyre Schola, serif; font-size: 3vw; ">
 			Get educated with SPREES, the Stanford Pre-Education Society. 
 		</h1>
-		<a class="btn btn-primary" href="#" role="button" style="left:27%;">Link</a>
-		<a class="btn btn-primary" href="#" role="button" style="left:27%;margin-left: 80px;">Link2 </a>
+		<a class="btn btn-danger" href="#scroll-target" role="button" style="left:29.5%;">More About Us</a>
+		<a class="btn btn-danger" href="#" role="button" style="left:29.5%;margin-left: 200px;">Get The Latest Update </a>
 
 	</div>
+
 	
-	<p>dlskjfnsjdnfvkjsdnbvkjsbdvkjbdvjbnsdkjvb</p>
+	<div id="scroll-target"></div>
+	<div class="container-fluid">
+	    <div class="row" style="height:100vh;">
+	      <div class="col-md" style="margin-top: 10vh;">
+	        <img class="rounded-circle" src="https://scontent.fsan1-2.fna.fbcdn.net/v/t31.0-8/22382470_753964168125866_5101513131121885808_o.jpg?_nc_cat=0&oh=a75214a8dc0bd669de707e9c5dc7ec0e&oe=5BEFCB13" style="height:60vh; width: 30vw;padding:0px;margin-left: 10%; padding-top">
+	      </div>
+	      <div class="col-md" style="margin-top: 30vh; margin-right:10px;">
+	        <h3>
+	        	We are a community of undergraduates who are passionate about education.
+	        </h3>
+	        <br>
+	        <p> 
+	        	The Stanford Pre-Education Society (SPREES) is Stanford University's first pre-professional society for students pursuing careers in education. We believe in attracting talented college graduates to the field of education and providing them with the support they need to get there. Though students at "elite" institutions like Stanford often overlook careers in teaching and education, SPREES believes that guidance and mentorship can inspire exceptional students to become the teachers and leaders we need in the field.
+	        </p>
+	      </div>
+	  </div>
+	</div>
+
+
+	
+
+	<div class="container" style="height:100vh;padding-top:5%;text-align:center;">
+		<h1 style="padding-bottom:5%;"> Members of SPREES can expect to... </h1>
+
+	    <div class="row" >
+	    <div class="col-sm">
+	    	<div id="front-img" style="">
+	    		<h1 style="top:30%;color:white;">Be Informed</h1>
+	    		<img class="rounded-circle" src="https://scontent.fsan1-2.fna.fbcdn.net/v/t31.0-8/22382470_753964168125866_5101513131121885808_o.jpg?_nc_cat=0&oh=a75214a8dc0bd669de707e9c5dc7ec0e&oe=5BEFCB13" style="height:30vh; width: 15vw;padding:0px;">
+	    	</div>
+	      
+	      <p> about current issues in education through workshops, teach-ins, field trips, and faculty dinners </p>
+	      <a class="btn btn-danger" href="#" role="button" style="">Learn More </a>
+	    </div>
+	    <div class="col-sm">
+	      <div id="front-img" style="">
+	    		<h1 style="top:30%;color:white;">Be Connected</h1>
+	    		<img class="rounded-circle" src="https://scontent.fsan1-2.fna.fbcdn.net/v/t1.0-9/22365251_755390971316519_6145729124438198765_n.jpg?_nc_cat=0&oh=47c9c00af4cbcb809d89a71939fa74bc&oe=5BED014D" style="height:30vh; width: 15vw;padding:0px;">
+	    	</div>
+	      <p> with other undergrads, mentors in the Graduate School of Education, and professionals in education throughout the Bay Area.  </p>
+	      <a class="btn btn-danger" href="#" role="button" style="">Learn More </a>
+	    </div>
+	    <div class="col-sm">
+	      <div id="front-img" style="">
+	    		<h1 style="top:30%;color:white;">Be Involved</h1>
+	    		<img class="rounded-circle" src="https://scontent.fsan1-2.fna.fbcdn.net/v/t1.0-9/22405509_755605971295019_6004576942601921996_n.jpg?_nc_cat=0&oh=d69b7e2bf9daed03d8c7cda951220d69&oe=5C3AE29D" style="height:30vh; width: 15vw;padding:0px;">
+	    	</div>
+	      <p> in service, education research, and other education-related organizations.  </p>
+	      <a class="btn btn-danger" href="#" role="button" style="">Learn More </a>
+	    </div>
+	  </div>
+	</div>
+	
+	  
+	
+	
+	
 </body>
 	</html>
